@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: #000;
+    font-family: 'Montserrat', sans-serif;
+}
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav a {
+    color: #adacac;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    width: 50%;
+    text-align: center;
+    padding: 1rem 0;
+}
+nav a:hover {
+    background-color: #cccccc;
+    cursor: pointer;
+    color: #000;
+    font-weight: 500;
+}
+nav:hover > a {
+    color: #fff;
+    font-weight: 500;
+}
+a img {
+    display: none;
+}
+header {
+    width: 100%;
+    height: auto;
+    padding: 3.2rem 2rem;
+}
+header > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 2rem auto;
+}
+h1 {
+    font-size: 6.4rem;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    line-height: 8rem;
+}
+/* Vamos a quitar ese fondo en celular */ 
+style > body {
+    display: none;
+}
+
+h1 > span {
+    display: none;
+}
+header > p {
+    text-align: center;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    padding: 0 2rem;
+}
+@media screen and (min-width: 580px) {
+    h1 > span {
+        display: inline-block;
+    }
+    .container{
+        display: flex;
+    }
+    .designer {
+        height: 150px;
+        background-image: url(imgs/git-hub.webp);
+        background-position: center;
+        background-size: contain;
+        position: relative;
+    }
+    .designer::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #72717175;
+    }
+    nav {
+        width: 150px;
+    }
+    nav ul {
+        position: fixed;
+        display: block;
+        width: 120px;
+        top: 0;
+        bottom: 0;
+        background-color: #222;
+    }
+    nav a {
+        display: block;
+        width: 100%;
+        padding: 2rem 0;
+        font-size: 1.3rem;
+        color: #fff;
+        font-weight:100;
+    }
+    nav a:nth-of-type(3) {
+        background-color: #000;
+    }
+    
+    nav a:hover  {
+        background-color: #000;
+        color: #fff;
+    }
+    a img {
+        display: block;
+        margin: 10px auto;
+        width: 4rem;
+    }
+
+    
+    .mascota {
+        width: 150px;                 /* Tamaño base */
+        height: auto;                 /* Mantiene proporción */
+        max-width: 20vw;              /* Limita el ancho al 20% del viewport (responsive) */
+        position: fixed;
+        right: 20px;                  /* Ajusta mejor que "left" para evitar desborde */
+        bottom: 20px;                 /* Más seguro que "top" en móviles */
+        border-radius: 25px;
+        z-index: 1000;
+        object-fit: cover;            /* Opcional: evita distorsión */
+    }
+}
+
+
+@media (max-width: 580px) {
+
+    .mascota { width: 100px;
+        height: 100px;
+        left: 420px;
+        top: 600px;
+        position: absolute;
+        border-radius: 25px; 
+        }
+
+   
+
+    }
