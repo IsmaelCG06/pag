@@ -71,6 +71,9 @@ header > p {
     line-height: 2.5rem;
     padding: 0 2rem;
 }
+
+
+
 @media screen and (min-width: 580px) {
     h1 > span {
         display: inline-block;
@@ -138,19 +141,80 @@ header > p {
         z-index: 1000;
         object-fit: cover;            /* Opcional: evita distorsión */
     }
+    
+    .contenedor-redes {
+        display: flex;
+        flex-wrap: wrap;           /* Permite que los íconos salten de línea si no caben */
+        justify-content: center;   /* Centra horizontalmente */
+        align-items: center;       /* Centra verticalmente */
+        gap: 5vw;   
+        width-left: 8rem;               
+        height: 40vh;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-left: 120px;
+       
+      }
+    
+      .icono-red {
+        max-width: 15vw;           /* Escala respecto al ancho de la ventana */
+        max-height: 15vh;
+        width: auto;
+        height: auto;
+        animation: subir 2s ease-out forwards;
+        opacity: 0;
+        border-radius: 25px; /* Bordes redondeados */
+      }
+
+       /* Animación de subida */ 
+    @keyframes subir {
+        from {
+          transform: translateY(20px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
 }
+
+    
 
 @media (max-width: 580px) {
 
     .mascota { width: 100px;
         height: 100px;
-        left: 420px;
+        left: 400px;
         top: 600px;
         position: absolute;
         border-radius: 25px; 
         }
-
-   
-
+    
+    .contenedor-cel{
+        display: flex;
+        flex-wrap: wrap;           /* Permite que los íconos salten de línea si no caben */
+        justify-content: center;   /* Centra horizontalmente */
+        align-items: center;       /* Centra verticalmente */
+        gap: 5vw;   
+        width-left: 8rem;               
+        height: 40vh;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-left: 10px;
+        
     }
+        
+    .iconoc {
+        max-width: 15vw;           /* Escala respecto al ancho de la ventana */
+        max-height: 15vh;
+        width: auto;
+        height: auto;
+        border-radius: 25px; /* Bordes redondeados */
+    }
+
+}
+
+
+
 
