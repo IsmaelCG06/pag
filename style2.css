@@ -104,6 +104,7 @@ header > p {
         top: 0;
         bottom: 0;
         background-color: #222;
+        z-index: 2;
     }
     nav a {
         display: block;
@@ -139,7 +140,74 @@ header > p {
         object-fit: cover;            /* Opcional: evita distorsión */
     }
 
+        /* Contenido de tarjeta */
+    /* Tarjeta desplegable al hacer hover */
+.tarjeta-hover {
+  width: 250px;
+  background: linear-gradient(to bottom, #5c63d1, #5c63d1);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  max-height: 70px;
+  cursor: pointer;
 }
+
+.estudiante-box{
+    position: absolute;
+    top: 290px;
+    left: 150px;
+    margin-left: 150px;
+    z-index: 0;
+    display: inline-block;
+}
+
+.experiencia-box{
+    position: absolute;
+    top: 290px;
+    left: 700px;
+    display: inline-block;
+}
+
+.pasatiempos-box{
+    position: absolute;
+    top: 290px;
+    left: 1100px;
+    display: inline-block;
+}
+
+
+.tarjeta-hover:hover {
+  max-height: 300px;
+}
+
+.tarjeta-header {
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  background-color: #1c205f;
+  color: white;
+}
+
+.tarjeta-contenido {
+  padding: 15px;
+  display: none;
+  color: white;
+}
+
+.tarjeta-hover:hover .tarjeta-contenido {
+  display: block;
+}
+
+
+}
+
+
+
+
+
+
+
 
 
 @media (max-width: 580px) {
@@ -152,6 +220,60 @@ header > p {
         border-radius: 25px; 
         }
 
-   
+        /* Contenido de tarjeta */
+    /* Tarjeta desplegable al hacer hover */
+.tarjeta-hover {
+  width: 200px;
+  background: linear-gradient(to bottom, #5c63d1,#5c63d1);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  max-height: 60px;
+  cursor: pointer;
+}
+
+.estudiante-box{
+    position: absolute;
+    top: 290px;
+    left: 30px;
+}
+
+.experiencia-box{
+    position: absolute;
+    top: 290px;
+    left: 260px;
+}
+
+.pasatiempos-box{
+    position: absolute;
+    top: 490px;
+    left: 150px;
+}
+
+.tarjeta-hover:hover {
+  max-height: 300px;
+}
+
+.tarjeta-header {
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  background-color: #1c205f;
+  color: white;
+}
+
+.tarjeta-contenido {
+  padding: 15px;
+  display: none;
+  color: white;
+  line-height: 1.8rem;
+}
+
+.tarjeta-hover:hover .tarjeta-contenido {
+  display: block;
+}
+
 
     }
+

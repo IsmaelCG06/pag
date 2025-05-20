@@ -132,26 +132,158 @@ header > p {
         width: 150px;                 /* Tamaño base */
         height: auto;                 /* Mantiene proporción */
         max-width: 20vw;              /* Limita el ancho al 20% del viewport (responsive) */
-        position: fixed;
+        position: absolute;
+        right: 20px;                  /* Ajusta mejor que "left" para evitar desborde */
+        bottom: 20px;                 /* Más seguro que "top" en móviles */
+        border-radius: 25px;
+        z-index: 1;
+        object-fit: cover;            /* Opcional: evita distorsión */
+    }
+    
+    main {
+        z-index: 2;
+    }
+     h2 {
+  color: #93b5c6;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.fortalezas, .debilidades {
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.debilidades {
+  margin-top: 50px;
+}
+
+.metas > h2 {
+    color: #7e82bc ;
+}
+.metas > h3 {
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.metas > ul {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.logros > h2 {
+    color:#dd97ed;
+}
+
+.logros > h3 {
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.logros > ul  {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    line-height: 1.5;
+    word-spacing: 0px;
+    margin-left: 100px;
+    z-index: 2;
+}
+
+
+}
+
+
+
+
+
+
+@media (max-width: 580px) {
+
+   .mascota {
+        width: 100px;                 /* Tamaño base */
+        height: 100px;                 /* Mantiene proporción */
+        max-width: 20vw;              /* Limita el ancho al 20% del viewport (responsive) */
+        position: absolute;
         right: 20px;                  /* Ajusta mejor que "left" para evitar desborde */
         bottom: 20px;                 /* Más seguro que "top" en móviles */
         border-radius: 25px;
         z-index: 1000;
         object-fit: cover;            /* Opcional: evita distorsión */
     }
+    
+
+    h2 {
+  color: #93b5c6;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.fortalezas, .debilidades {
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.debilidades {
+  margin-top: 50px;
+}
+
+.metas > h2 {
+    color: #7e82bc ;
+}
+.metas > h3 {
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.metas > ul {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.logros > h2 {
+    color:#dd97ed;
+}
+
+.logros > h3 {
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.logros > ul  {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    line-height: 1.5;
+    word-spacing: 0px;
 }
 
 
-@media (max-width: 580px) {
 
-    .mascota { width: 100px;
-        height: 100px;
-        left: 400px;
-        top: 600px;
-        position: absolute;
-        border-radius: 25px; 
-        }
 
-   
 
-    }
+}

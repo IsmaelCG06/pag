@@ -156,7 +156,7 @@ h2{
     /* Contenido para pantallas con min 580px*/
 
 
-    .img-cont {
+   /* .img-cont {
         width: 150px;
         height: 200px;
         position: absolute;
@@ -165,9 +165,9 @@ h2{
         border-radius: 25px;
         animation: subir 2s ease-out forwards;
         opacity: 0;
-    }
+    } */
     /* Animación de subida */ 
-    @keyframes subir {
+  /*  @keyframes subir {
         from {
           transform: translateY(20px);
           opacity: 0;
@@ -176,7 +176,7 @@ h2{
           transform: translateY(0);
           opacity: 1;
         }
-      }
+      } */
 
     .mascota {
         width: 150px;                 /* Tamaño base */
@@ -204,6 +204,5 @@ h2{
         border-radius: 25px; 
         }
 
-   
 
     }

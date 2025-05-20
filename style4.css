@@ -181,6 +181,10 @@ header > p {
 
     
 
+
+
+
+
 @media (max-width: 580px) {
 
     .mascota { width: 100px;
@@ -212,7 +216,8 @@ header > p {
         height: auto;
         border-radius: 25px; /* Bordes redondeados */
     }
-
+    
+    
 }
 
 
